@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/add_chat_boxDialog_LL">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/create_chat_textView"
+        android:text="Create chat"
+        android:textSize="26dp" />
+
+    <EditText
+        android:id="@+id/create_chat_editTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter chat name here"
+        android:minHeight="48dp" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:drawableLeft="@drawable/ic_add"
+        android:id="@+id/create_chat_Btn"
+        android:background="@drawable/button_color"
+        android:text="Create"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/subscribe_chat_textView"
+        android:text="Subscribe to a chat"
+        android:textSize="26dp"/>
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/retrieved_topics_LV" />
+
+
+</LinearLayout>

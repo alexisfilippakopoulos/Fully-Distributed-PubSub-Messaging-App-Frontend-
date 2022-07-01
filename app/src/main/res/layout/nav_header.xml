@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="176dp"
+    android:background="@color/purple_200"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <ImageView
+        android:id="@+id/navbar_userIco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_launcher_round" />
+
+    <TextView
+        android:id="@+id/navbar_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="name"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:padding="8dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+    <TextView
+        android:id="@+id/navbar_userIP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="ip"
+        android:inputType="text"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        tools:ignore="TouchTargetSizeCheck" />
+
+</LinearLayout>

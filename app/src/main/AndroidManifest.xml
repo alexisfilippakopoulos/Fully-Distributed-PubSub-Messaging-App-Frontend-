@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.ds" >
+
+    <uses-sdk
+        android:maxSdkVersion="31"
+        android:minSdkVersion="26"
+        android:targetSdkVersion="31" />
+    <uses-feature android:name="android.hardware.camera2" android:required="true"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA"/>
+
+    <application
+        android:name=".MyApp"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/MessageIT"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.DistributedSystemsMessengerApp2022.NoActionBar"
+        tools:targetApi="31" >
+        <activity
+            android:name=".SplashStoryUploading"
+            android:exported="false" />
+        <activity
+            android:name="com.ds.PlayVideoActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.ds.ChatRoomActivity"
+            android:exported="false"
+            android:parentActivityName="com.ds.ChatRoomActivity" />
+        <activity
+            android:name="com.ds.SplashScreen"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.ds.Notifications"
+            android:exported="false"
+            android:label="Notifications" />
+        <activity
+            android:name="com.ds.Friends"
+            android:exported="false"
+            android:label="Friends" />
+        <activity
+            android:name="com.ds.Stories"
+            android:exported="false"
+            android:label="Stories" />
+        <activity
+            android:name="com.ds.ProfileActivity"
+            android:exported="false"
+            android:label="Profile"
+            android:launchMode="singleInstancePerTask" />
+        <activity
+            android:name="com.ds.MainMenu"
+            android:exported="false"
+            android:label="Chat Box"
+            android:parentActivityName="com.ds.LogIn"
+            android:theme="@style/Theme.DistributedSystemsMessengerApp2022.NoActionBar" />
+        <activity
+            android:name="com.ds.BlockedUsers"
+            android:exported="false"
+            android:label="Blocked Users"
+            android:theme="@style/Theme.DistributedSystemsMessengerApp2022.NoActionBar" />
+        <activity
+            android:name="com.ds.LogIn"
+            android:exported="true"
+            android:label="Log In" />
+    </application>
+
+</manifest>

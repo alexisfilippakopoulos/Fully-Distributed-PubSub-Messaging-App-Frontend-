@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="nagivation_view">
+
+    <item android:title="General">
+        <menu>
+            <item
+                android:id="@+id/nav_chat"
+                android:icon="@drawable/ic_message"
+                android:title="Chat" />
+            <item
+                android:id="@+id/nav_stories"
+                android:icon="@drawable/ic_stories"
+                android:title="Stories" />
+            <item
+                android:id="@+id/log_out"
+                android:icon="@drawable/ic_exit"
+                android:title="Log Out" />
+
+        </menu>
+    </item>
+
+    <item android:title="Account">
+        <menu>
+            <item
+                android:id="@+id/nav_profile"
+                android:icon="@drawable/ic_profile"
+                android:title="Profile" />
+            <item
+                android:id="@+id/nav_notifications"
+                android:icon="@drawable/ic_notifications"
+                android:title="Notifications" />
+            <item
+                android:id="@+id/nav_friends"
+                android:icon="@drawable/ic_people"
+                android:title="Friends" />
+            <item
+                android:id="@+id/nav_blocked_users"
+                android:icon="@drawable/ic_block"
+                android:title="Blocked Users" />
+
+        </menu>
+    </item>
+
+</menu>
